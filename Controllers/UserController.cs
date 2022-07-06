@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace CRUD.API.Controllers
 {
     [Route("api/[controller]")]
-    public class SuperHeroController : ControllerBase
+    public class UserController : ControllerBase
     {
         private readonly DataContext _context;
         private readonly IUserRepository _userRepository;
 
 
-        public SuperHeroController(DataContext context, IUserRepository userRepository)
+        public UserController(DataContext context, IUserRepository userRepository)
         {
             _context = context;
             _userRepository = userRepository;
