@@ -18,13 +18,11 @@ namespace CRUD.API.Controllers
                     var responseContent = response.Content.ReadAsStringAsync().Result;
                     response.EnsureSuccessStatusCode();
 
-
-                    
                     return responseContent;
                 }
             }
         }
 
-      
+
     }
 }

@@ -26,8 +26,6 @@ namespace CRUD.API.Repository
             return await _context.Users.ToListAsync();
         }
 
-
-
         public async Task<List<User>> UpdateBookAsync(User updatedUser)
         {
             var user = await _context.Users.FindAsync(updatedUser.Id);
@@ -36,18 +34,13 @@ namespace CRUD.API.Repository
             user.LastName = updatedUser.LastName;
             user.personalId = updatedUser.personalId;
             user.YearOfBirth = updatedUser.YearOfBirth;
-            user.Gender = updatedUser.Gender;
+            user.Gend = updatedUser.Gend;
             user.IsActive = updatedUser.IsActive;
 
             await _context.SaveChangesAsync();
 
             return await _context.Users.ToListAsync();
         }
-
-
-
-
-
 
         public async Task<List<User>> GetFilteredUsersAsync(string FirstName, string LastName, int personalId)
         {
@@ -64,9 +57,7 @@ namespace CRUD.API.Repository
             if (personalId != 0)
                 records = records.Where(o => o.personalId == personalId).ToList();
 
-
-
-            return records.OrderByDescending(i => i.Id).ToList();
+            return records.OrderBy(i => i.Id).ToList();
         }
     }
 }
