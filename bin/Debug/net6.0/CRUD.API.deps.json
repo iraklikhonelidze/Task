@@ -8,12 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "CRUD.API/1.0.0": {
         "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "6.0.6",
           "Microsoft.EntityFrameworkCore": "6.0.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.6",
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "6.0.6",
-          "RestSharp": "108.0.1",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -343,14 +342,6 @@
             "assetType": "runtime",
             "assemblyVersion": "4.0.2.0",
             "fileVersion": "4.700.19.56404"
-          }
-        }
-      },
-      "RestSharp/108.0.1": {
-        "runtime": {
-          "lib/net6.0/RestSharp.dll": {
-            "assemblyVersion": "108.0.1.0",
-            "fileVersion": "108.0.1.0"
           }
         }
       },
@@ -904,13 +895,6 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
-    },
-    "RestSharp/108.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XKwuwWq7A4dxZ8l9QkS2+ePLJ9ImmLaJSeFO6H2kpII4Us4n1NRs4w3c//8H2BYpL1XqBE8nmsd9aNCVBwXmOA==",
-      "path": "restsharp/108.0.1",
-      "hashPath": "restsharp.108.0.1.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.6": {
       "type": "package",

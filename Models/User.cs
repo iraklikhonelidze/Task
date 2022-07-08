@@ -15,9 +15,7 @@ namespace CRUD.API
         [Required]
         public int personalId { get; set; }
         public int YearOfBirth { get; set; }
-
-        [Required]
-        public virtual Gender Gend { get; set; }
+        public Gender Gend { get; set; }
         [Required]
         public bool IsActive { get; set; }
     }

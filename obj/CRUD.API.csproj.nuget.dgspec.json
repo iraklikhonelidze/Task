@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asikharulidze\\Desktop\\CRUD.API\\CRUD.API.csproj": {}
+    "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\CRUD.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asikharulidze\\Desktop\\CRUD.API\\CRUD.API.csproj": {
+    "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\CRUD.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asikharulidze\\Desktop\\CRUD.API\\CRUD.API.csproj",
+        "projectUniqueName": "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\CRUD.API.csproj",
         "projectName": "CRUD.API",
-        "projectPath": "C:\\Users\\asikharulidze\\Desktop\\CRUD.API\\CRUD.API.csproj",
-        "packagesPath": "C:\\Users\\asikharulidze\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asikharulidze\\Desktop\\CRUD.API\\obj\\",
+        "projectPath": "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\CRUD.API.csproj",
+        "packagesPath": "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\asikharulidze\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Irakli Khonelidze\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
@@ -63,14 +59,6 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
-              "target": "Package",
-              "version": "[6.0.6, )"
-            },
-            "RestSharp": {
-              "target": "Package",
-              "version": "[108.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -95,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

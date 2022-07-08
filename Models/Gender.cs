@@ -10,10 +10,8 @@ namespace CRUD.API.Models
     public class Gender
     {
         [ForeignKey("User")]
-        public int GenderId { get; set; }
+        public int Id { get; set; }
+        [Required]
         public int Gend { get; set; }
-        public int UserRef { get; set; }
-        public virtual User User { get; set; }
-
     }
 }
