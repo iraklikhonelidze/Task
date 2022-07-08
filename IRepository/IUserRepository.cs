@@ -1,3 +1,5 @@
+using Task.Dtos;
+
 namespace CRUD.API.IRepository
 {
     public interface IUserRepository

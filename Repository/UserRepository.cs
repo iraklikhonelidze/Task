@@ -11,6 +11,7 @@ namespace CRUD.API.Repository
         public UserRepository(DataContext context)
         {
             _context = context;
+
         }
 
         public async Task<List<User>> GetAllUsersAsync()

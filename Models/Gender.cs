@@ -10,7 +10,7 @@ namespace CRUD.API.Models
     public class Gender
     {
         [ForeignKey("User")]
-        public int Id { get; set; }
+        public int GenderId { get; set; }
         [Required]
         public int Gend { get; set; }
     }

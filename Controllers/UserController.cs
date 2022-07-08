@@ -1,6 +1,8 @@
+using AutoMapper;
 using CRUD.API.Data;
 using CRUD.API.IRepository;
 using Microsoft.AspNetCore.Mvc;
+using Task.Dtos;
 
 namespace CRUD.API.Controllers
 {
@@ -9,12 +11,12 @@ namespace CRUD.API.Controllers
     {
         private readonly DataContext _context;
         private readonly IUserRepository _userRepository;
-
-
-        public UserController(DataContext context, IUserRepository userRepository)
+        private readonly IMapper _mapper;
+        public UserController(DataContext context, IUserRepository userRepository, IMapper mapper)
         {
             _context = context;
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
         [HttpGet("GetUsers")]
@@ -32,19 +34,19 @@ namespace CRUD.API.Controllers
         }
 
         [HttpPost("CreateUser")]
-        public async Task<ActionResult<List<User>>> CreateUser(User User)
+        public async Task<ActionResult<List<User>>> CreateUser(AddUserDto User)
         {
-            return Ok(await _userRepository.AddUserAsync(User));
+            return Ok(await _userRepository.AddUserAsync(_mapper.Map<User>(User)));
         }
 
         [HttpPut("UpdateUser")]
-        public async Task<ActionResult<List<User>>> UpdateUser(User updatedUser)
+        public async Task<ActionResult<List<User>>> UpdateUser(UpdateUserDto updatedUser)
         {
             var oldUserDetails = await _context.Users.FindAsync(updatedUser.Id);
             if (oldUserDetails == null)
                 return BadRequest("User not found.");
 
-            return Ok(await _userRepository.UpdateBookAsync(updatedUser));
+            return Ok(await _userRepository.UpdateBookAsync(_mapper.Map<User>(updatedUser)));
         }
     }
 }

@@ -1,12 +1,21 @@
+using AutoMapper;
 using CRUD.API.Data;
 using CRUD.API.IRepository;
 using CRUD.API.Repository;
 using Microsoft.EntityFrameworkCore;
+using Task.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var config = new MapperConfiguration(cfg =>
+{
+    cfg.AddProfile(new AutoMapperProfiles());
+});
 
+var mapper = config.CreateMapper();
+
+builder.Services.AddSingleton(mapper);
 builder.Services.AddControllers();
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

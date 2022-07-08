@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "z9tJBFOhtEIPs9nFk/aWv9MNemfeCQiP3gFlaeJ+ittBhu/ahIhD/9Yt2OYPge4BpvLwfeRjmZv/fsdRGziZoQ==",
+  "dgSpecHash": "SP+ymVkQMuEGMgF2pxv3myz3bVK2nkagS2vU/3jyF8eXyB0ilPQ/aeenuBv9LMCpn8SOILakuHqBBykHqVTZcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Irakli Khonelidze\\Desktop\\Task\\CRUD.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Irakli Khonelidze\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.6\\microsoft.data.sqlite.core.6.0.6.nupkg.sha512",
